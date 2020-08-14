@@ -1,0 +1,13 @@
+#Idea files
+.idea
+*.iml
+
+#maven files
+target
+
+#temp files
+*~
+
+#docker pgadmin session files
+pgadmin/volume/sessions
+pgadmin/volume/pgadmin4.db
