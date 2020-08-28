@@ -27,3 +27,5 @@ SELECT ROW_NUMBER() OVER(ORDER BY rnd) AS id, first_name, last_name, age FROM
 ALTER TABLE test_paging ADD PRIMARY KEY (id);
 
 CREATE UNIQUE INDEX ix_test_paging_id ON test_paging (id);
+
+CREATE INDEX ix_test_paging_first_name_id ON test_paging (first_name, id);
